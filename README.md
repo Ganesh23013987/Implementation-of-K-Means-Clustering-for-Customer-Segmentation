@@ -33,17 +33,17 @@ import matplotlib.pyplot as plt
 data = pd.read_csv("/content/Mall_Customers.csv")
 data.head()
 ```
-<img width="750" alt="image" src="https://github.com/user-attachments/assets/e0c7f6fe-10be-4821-b085-bf883a2a3664">
+<img width="850" alt="image" src="https://github.com/user-attachments/assets/e0c7f6fe-10be-4821-b085-bf883a2a3664">
 
 ```
 data.info()
 ```
-<img width="750" alt="image" src="https://github.com/user-attachments/assets/14276aee-d3c4-437f-8d2c-46d745766d8d">
+<img width="850" alt="image" src="https://github.com/user-attachments/assets/14276aee-d3c4-437f-8d2c-46d745766d8d">
 
 ```
 data.isnull().sum()
 ```
-<img width="750" alt="image" src="https://github.com/user-attachments/assets/2ffd1a84-b5e6-4e39-933a-f62915630dc5">
+<img width="850" alt="image" src="https://github.com/user-attachments/assets/2ffd1a84-b5e6-4e39-933a-f62915630dc5">
 
 ```
 from sklearn.cluster import KMeans
@@ -58,7 +58,7 @@ plt.ylabel("wcss")
 plt.title("Elbow Method")
 ```
 
-<img width="850" alt="image" src="https://github.com/user-attachments/assets/db8b27af-0672-4371-bf41-a8db408b9ee4">
+<img width="950" alt="image" src="https://github.com/user-attachments/assets/db8b27af-0672-4371-bf41-a8db408b9ee4">
 
 ```
 km=KMeans(n_clusters=5)
@@ -67,7 +67,7 @@ KMeans(n_clusters=5)
 y_pred=km.predict(data.iloc[:,3:])
 y_pred
 ```
-<img width="750" alt="image" src="https://github.com/user-attachments/assets/a0561a10-e229-4f66-8113-f0b53efd3d65">
+<img width="850" alt="image" src="https://github.com/user-attachments/assets/a0561a10-e229-4f66-8113-f0b53efd3d65">
 
 ```
 data["cluster"]=y_pred
@@ -86,7 +86,7 @@ plt.scatter(df3["Annual Income (k$)"],df3["Spending Score (1-100)"], color = "bl
 plt.scatter(df4["Annual Income (k$)"],df4["Spending Score (1-100)"], color = "red")
 plt.show()
 ```
-<img width="750" alt="image" src="https://github.com/user-attachments/assets/8049fb92-6396-4b66-9c83-8ce64bab40d9">
+<img width="850" alt="image" src="https://github.com/user-attachments/assets/8049fb92-6396-4b66-9c83-8ce64bab40d9">
  
 ## Result:
 Thus the program to implement the K Means Clustering for Customer Segmentation is written and verified using python programming.
