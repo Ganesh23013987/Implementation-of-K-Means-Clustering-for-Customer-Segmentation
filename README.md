@@ -58,7 +58,7 @@ plt.ylabel("wcss")
 plt.title("Elbow Method")
 ```
 
-<img width="950" alt="image" src="https://github.com/user-attachments/assets/db8b27af-0672-4371-bf41-a8db408b9ee4">
+<img width="1250" alt="image" src="https://github.com/user-attachments/assets/db8b27af-0672-4371-bf41-a8db408b9ee4">
 
 ```
 km=KMeans(n_clusters=5)
