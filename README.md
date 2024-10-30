@@ -67,7 +67,7 @@ KMeans(n_clusters=5)
 y_pred=km.predict(data.iloc[:,3:])
 y_pred
 ```
-<img width="850" alt="image" src="https://github.com/user-attachments/assets/a0561a10-e229-4f66-8113-f0b53efd3d65">
+<img width="950" alt="image" src="https://github.com/user-attachments/assets/a0561a10-e229-4f66-8113-f0b53efd3d65">
 
 ```
 data["cluster"]=y_pred
